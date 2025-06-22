@@ -13,15 +13,19 @@ namespace DesktopApp
         {
             var userName = UserName.Text;
             var password = Password.Text;
-            if (UserName.Text == "admin" && Password.Text == "1234")
+            using (DataContext context = new DataContext())
             {
-                var mainWindow = new MainWindow();
-                mainWindow.Show();
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Invalid username or password");
+                bool userFound = context.Users.Any(user => user.Name == userName && user.Password == password);
+                if (userFound)
+                {
+                    var mainWindow = new MainWindow();
+                    mainWindow.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid username or password");
+                }
             }
         }
     }

@@ -18,22 +18,22 @@
         
         <!-- Login Title -->
         <TextBlock Grid.Row="0" Text="Login" VerticalAlignment="Center" HorizontalAlignment="Center"
-                   FontSize="40" FontWeight="Bold" Foreground="blue"/>
+                   FontSize="40" FontWeight="Bold" Foreground="#2c3e50"/>
 
         <!-- User Name -->
         <TextBlock Grid.Row="1" Width="70" Text="User Name" HorizontalAlignment="Left" 
                    VerticalAlignment="Center" Margin="30,5,5,5"/>
         <TextBox Grid.Row="1" Width="150" HorizontalAlignment="Right" Margin="5,5,30,5" Height="20px" 
-                 VerticalAlignment="Center" BorderBrush="Blue" Name="UserName" />
+                 VerticalAlignment="Center" BorderBrush="#2c3e50" Name="UserName" />
 
         <!-- Password -->
         <TextBlock Grid.Row="2" Width="70" Text="Password" HorizontalAlignment="Left" 
            VerticalAlignment="Center" Margin="30,5,5,5"/>
         <TextBox Grid.Row="2" Width="150" HorizontalAlignment="Right" Margin="5,5,30,5" Height="20px" 
-         VerticalAlignment="Center" BorderBrush="Blue" Name="Password" />
+         VerticalAlignment="Center" BorderBrush="#2c3e50" Name="Password" />
 
         <!-- Submit Btn -->
-        <Button Grid.Row="3" Width="100" Height="30" Background="Blue" Content="Submit" 
+        <Button Grid.Row="3" Width="100" Height="30" Background="#2c3e50" Content="Submit" 
                 Foreground="White" Name="btn_submit" Click="btn_submit_Click" />
 
     </Grid>

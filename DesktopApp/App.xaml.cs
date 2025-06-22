@@ -9,9 +9,6 @@ namespace DesktopApp
         {
             DatabaseFacade facade = new DatabaseFacade(new DataContext());
             facade.EnsureCreated();
-            //base.OnStartup(e);
-            //var login = new LoginWindow();
-            //login.Show();
         }
     }
 
