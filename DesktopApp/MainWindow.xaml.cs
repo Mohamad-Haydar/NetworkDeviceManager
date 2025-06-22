@@ -68,5 +68,11 @@ namespace DesktopApp
                 device.Status = status;
             }
         }
+
+        private void ScanLan_Click(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = new DiscoverDevicesWindow();
+            mainWindow.Show();
+        }
     }
 }
